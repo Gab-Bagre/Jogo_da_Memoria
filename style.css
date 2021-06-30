@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+    background: lightcoral
+}
+.jogoDaMemoria {
+    margin: auto;
+    width: 35%;
+    height: 15%; 
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+
+.carta {
+    width: 33%;
+    height: 66.66%;
+    margin: 5px;
+    position: relative;
+    transform:scale(1);
+    transform-style: preserve-3d;
+    transition: transform.3s;
+}
+.carta.vira {
+    transform: rotateY(180deg);
+}
+
+.carta:active{
+    transform: scale(.88);
+    transition: transform.2s;
+}
+
+.faceFrente,
+.faceVerso {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(40, 22, 200);
+    backface-visibility: hidden;
+}
+
+.faceFrente{
+    transform: rotateY(180deg);
+}
+
+
+
