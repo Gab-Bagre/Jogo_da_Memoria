@@ -5,15 +5,16 @@
 }
 
 body {
-    background: lightcoral
+
+    background-image: linear-gradient(to bottom, #601292, #0057c2, #007bc2, #0095a2, #20aa80);
 }
 .jogoDaMemoria {
     margin: 0 auto;
-    margin-top: 130px;
+    margin-top: 5px;
+    margin-bottom: 100px;
     width: 840px; 
     display: flex;
     flex-wrap: wrap;
-
 }
 
 
@@ -21,6 +22,8 @@ body {
     width: 200px;
     height: 200px;
     margin: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     position: relative;
     transform:scale(1);
     transform-style: preserve-3d;
@@ -63,7 +66,7 @@ body {
 }  
 
 .infoJogador{
-    background-color: crimson;
+    background-image: linear-gradient(to bottom, #3a353d, #414d66, #1b6c89, #008d94, #20aa80);
     border: solid rgb(0, 0, 0);
     font-size: 35px;
     font-weight: 560;
@@ -71,13 +74,9 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-.infoJogador span{
-    display: inline-block;
-    min-width: 35px;
-}
 
 #comecaJogo {
-    margin-left: 700px;
+    margin-left: 880px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -95,7 +94,25 @@ body {
     pointer-events: none;
 }
 
+#nomeJogador{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
 
+.erro {
+    color: #BC575A;
+}
+
+.placar{
+    border: solid black;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    margin-left: 55px;
+    font-size: 27px;
+
+}
 
 
 
