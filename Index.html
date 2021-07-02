@@ -6,12 +6,18 @@
     <link rel="stylesheet" href="style.css"> </link>    
 </head>
 <body> 
-    <section class= "jogoDaMemoria">
-        <div class="carta" data.linguagem="css3">
+    <div class="infoJogador">
+        <div>Contagem de clicks: <span id= "clicks">0</span> </div>
+        <div>Contagem de erros: <span id="erros">0</span></div>
+        <button id="comecaJogo">Começar Jogo</button>
+    </div>
+
+    <div class= "jogoDaMemoria">
+        <div class="carta" data-linguagem="css3">
             <img class="faceFrente" src="cards/css3.png" alt="css3"/>
             <img class="faceVerso" src="cards/verso.png" alt="verso"/>
         </div>
-        <div class="carta" data.linguagem="css3">
+        <div class="carta" data-linguagem="css3">
             <img class="faceFrente" src="cards/css3.png" alt="css3"/>
             <img class="faceVerso" src="cards/verso.png" alt="verso"/>
         </div>
@@ -39,7 +45,24 @@
             <img class="faceFrente" src="cards/nodejs.png" alt="nodejs"/>
             <img class="faceVerso" src="cards/verso.png" alt="verso"/>
         </div>
-    </section>
+        <div class="carta" data-linguagem="java">
+            <img class="faceFrente" src="cards/java.png" alt="java"/>
+            <img class="faceVerso" src="cards/verso.png" alt="verso"/>
+        </div>
+        <div class="carta" data-linguagem="java">
+            <img class="faceFrente" src="cards/java.png" alt="java"/>
+            <img class="faceVerso" src="cards/verso.png" alt="verso"/>
+        </div>
+        <div class="carta" data-linguagem="springBoot">
+            <img class="faceFrente" src="cards/springboot.png" alt="springBoot"/>
+            <img class="faceVerso" src="cards/verso.png" alt="verso"/>
+        </div>
+        <div class="carta" data-linguagem="springBoot">
+            <img class="faceFrente" src="cards/springboot.png" alt="springBoot"/>
+            <img class="faceVerso" src="cards/verso.png" alt="verso"/>
+        </div>
+        
+    </div>
     
     <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js" defer></script>
